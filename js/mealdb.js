@@ -10,8 +10,8 @@ const searchBtn = document.getElementById("button-search");
 const searchInput = document.getElementById("search-field");
 searchInput.addEventListener("keypress", function (event) {
   //   event.preventDefault();
-  console.log("keypress triggered");
-  if (event.keyCode == 13) {
+  //   console.log("keypress triggered");
+  if (event.key == "Enter") {
     searchBtn.click();
   }
 });
